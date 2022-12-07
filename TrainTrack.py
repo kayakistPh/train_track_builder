@@ -4,9 +4,15 @@ import math
 
 class track_generator:
     def __init__(self) -> None:
+        
+        #  Infomation from https://woodenrailway.info/track/brio-track-guide
         self.parts = {
-            "D": {"count": 4, "dir": 0.0, "mag": 220},
-            "E": {"count": 8, "dir": 45.0, "mag": 153},
+            "A1": {"count": 2, "dir": 0.0, "mag": 108},
+            "A2": {"count": 6, "dir": 0.0, "mag": 54},
+            "A": {"count": 4, "dir": 0.0, "mag": 144},
+            "D": {"count": 7, "dir": 0.0, "mag": 220},
+            "E": {"count": 10 "dir": 45.0, "mag": 153},
+            "E1": {"count": 2 "dir": 45.0, "mag": 72},
         }
         self.parts_bin = self.parts_to_bin(self.parts)
         self.variations = []
